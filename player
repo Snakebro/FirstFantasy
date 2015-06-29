@@ -1,0 +1,7 @@
+player = {'health': 500,
+          'attack': 50,
+          'defense': 30,
+          'inventory': [],
+          'skills': [],
+          
+          }
