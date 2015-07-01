@@ -1,7 +1,6 @@
-player = {'health': 500,
-          'attack': 50,
-          'defense': 30,
-          'inventory': [],
-          'skills': [],
-          
-          }
+class Player():
+          def __init__(self, health, attack, defense):
+                    self.health = health
+                    self.attack = attack
+                    self.defense = defense
+                    
