@@ -1,5 +1,5 @@
 class Player():
-          def __init__(self, health, attack, defense):
+          def __init__(self, max_health, current_health, attack, defense):
                     self.health = health
                     self.attack = attack
                     self.defense = defense
@@ -8,3 +8,13 @@ class Player():
                     
                     
           def defend(self):
+          
+          
+          def heal(self, potion):
+                    if self.current_health < self.max_health:
+                              self.current_health += potion
+                              if self.current_health > self.max_health:
+                                        self.current_health = self.max_health
+                              message = 'I have healed myself for ' + potion + ' HP'
+                              return message
+                              
